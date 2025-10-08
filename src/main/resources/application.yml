@@ -1,0 +1,3 @@
+sprint.datasource.url=jdbc:postgresql://localhost:5432/softfact
+sprint.datasource.username=postgres
+sprint.datasource.password=postgres
