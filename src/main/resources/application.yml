@@ -1,3 +1,14 @@
-sprint.datasource.url=jdbc:postgresql://localhost:5432/softfact
-sprint.datasource.username=postgres
-sprint.datasource.password=postgres
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/softfact
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: validate   # deixe o Flyway cuidar do DDL
+    properties:
+      hibernate:
+        format_sql: true
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
